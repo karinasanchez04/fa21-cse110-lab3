@@ -1,0 +1,94 @@
+
+header {
+    background-color: #acd1af;
+    color:#2b4f1c;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
+    margin:auto;
+    
+}
+
+h4 {
+    color:green;
+    text-decoration: underline;
+    text-align: left;
+    
+}
+
+section{
+    padding-left: 2pc;
+    padding-bottom: 1pc;
+    border: groove green;
+    border-width: 2px;
+    background-color: hsla(102, 48%, 82%, 1);
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+#attendance{
+    top: 231px;
+    display: inline-block;
+    width: 400px;
+}
+
+#agenda{
+    display: inline-block;
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    top: 231px; 
+    left: 500px;
+}
+
+details{
+    
+    padding-left: 2pc;
+    padding-bottom: 1pc;
+    padding-top: 5px;
+    border: groove green;
+    border-width: 2px;
+    background-color: hsla(102, 48%, 82%, 1);
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+div{
+    padding: 0pc 0pc 1pc 2pc;
+    border: 2px groove green;
+    background-color: hsla(102, 48%, 82%, 1);
+    border-radius: 10px;
+    margin: 1px 10px 0px 10px;
+}
+
+form{
+
+    border: groove green;
+    border-width: 2px;
+    background-color: hsla(102, 48%, 82%, 1);
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 400px;
+
+}
+
+strong {
+    color: rgb(19, 87, 40);
+}
+
+
+main {
+    
+    border: 10px forestgreen;
+}
