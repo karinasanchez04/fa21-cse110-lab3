@@ -20,6 +20,7 @@ header {
     border-style: solid;
     border-radius: 10px;
 
+    /* using absolute unit pc */
     padding-top: 1pc;
     padding-bottom: 1pc;
     margin:auto;
@@ -43,10 +44,12 @@ div > h4{
     color:green;
     text-decoration: underline;
     text-align: left;
+
 }
 
 /* using adjacent combinator */
 h4 + p {
+    /* using absolute unit pt */
     font-size: 11pt;
     color: navy;
 }
@@ -58,6 +61,8 @@ h4 ~ ol{
 
 div.business{
     display: inline-block;
+
+    /* using absolute unit px */
     padding: 10px 20px 10px 20px;
     border: 2px groove green;
     background-color: hsla(102, 48%, 82%, 1);
@@ -80,6 +85,12 @@ section{
     margin-bottom: 0px;
     display: inline-block;
     padding: 10px 20px 10px 20px;
+    
+}
+
+ul{
+    /* using relative unit % */
+    font-size: 80%;
 }
 
 #wrapper{
@@ -140,6 +151,12 @@ section{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
+
+}
+
+#media > h4{
+    /* using relative unit em*/
+    font-size: 1.1em;
 }
 
 
@@ -213,32 +230,30 @@ details{
     display: block;
 }
 
-footer{
-    display: block;
-    height: 80px;
-    width: 350px;
-    min-width: 200px;
-    padding-left: 10px;
-}
 
+/* using psuedo classes*/
 button:hover{
     color: red;
 }
 
-
+/*links turn pink when clicked*/
 a:active {
     color: pink;
 }
 
+/*details turn pink when clicked*/
 details:active{
     color: plum;
 }
 
+/*using attribute selector*/
 a[target=_caps] {
     background-color: yellow;
+    /* using relative unit ch */
+    font-size: 2ch;
 }
 
-
+/* using selector list*/
 strong,b,i,em {
     color: rgba(187, 6, 6, 0.959);
 }
