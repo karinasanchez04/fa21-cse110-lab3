@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <style>
             footer{
                 border: groove green;
@@ -29,55 +32,80 @@
         </header>
         <hr>
         <main>
-            <section id="attendance">
-                <h4>Attendance List</h4>
-                 <ul>
-                     <li>Karina</li>
-                     <li>Justin</li>
-                     <li>Bob</li>
-                     <li>Lisa</li>
-                     <li>Sally</li>
-                     <li>Nate</li>
-                     <li>Lola</li>
-                     <li>Joe</li>
-                 </ul>
-            </section>
+
+            <div id="wrapper">
+                <section id="logistics">
+                    <h4>Logistics</h4>
+                        <ul>
+                         <li>Date: 10/08/2021</li>
+                         <li>Time: 4:00:00pm </li>
+                         <li>Meeting Purpose: Discuss our project plans</li>
+                         <li>Facilitator: Karina Sanchez</li>  
+                         <li>Note Taker: Justin</li> 
+                    </ul>
+                </section>
+
+                <section id="attendance">
+                    <h4>Attendance List</h4>
+                     <ul>
+                       <li>Karina</li>
+                       <li>Justin</li>
+                       <li>Bob</li>
+                       <li>Lisa</li>
+                       <li>Sally</li>
+                       <li>Nate</li>
+                       <li>Lola</li>
+                     </ul>
+                </section>
             <br>
             
-            <section id="agenda">
-                <h4>Today's Agenda</h4>
+                <section id="agenda">
+                  <h4>Today's Agenda</h4>
                     <ol>
-                     <li>Recap from last meeting</li>
-                     <li>Choose a project idea</li>
-                     <li>Talk about roles</li>
-                     <li>Discuss design ideas</li>  
-                </ol>
-            </section>
+                         <li>Recap from last meeting</li>
+                         <li>Choose a project idea</li>
+                         <li>Talk about roles</li>
+                         <li>Discuss design ideas</li>  
+                     </ol>
+                 </section>
+
+
+            </div>
             <br>
-            <div>
+            <div id="container">
+            <div class="business">
+                <h3>Business</h3>
                 <h4>Unfinished Business/Recap of Last Meeting</h4>
-                     <p>Last meeting Bob gave us possible project ideas that included
-                     a <strong>daily planner app</strong>, a <b>women's safety app</b> or a <strong>social media app</strong>
-                     <br>
+                     <p>Last meeting Bob gave us possible project ideas <br>that included
+                         
+                     a <strong>daily planner app</strong>, a <b>women's <br> 
+                        safety app</b> or a <strong>social media app</strong>.
+                        <br>
                     We have not yet chosen a project yet.  </p>
 
                 <h4>New Business</h4>
-                    <p>Today, we need to choose a project, talk about <i>who</i> is going to have what roles and we will also discuss 
+                    <p>Today, we need to choose a project, talk about <br>
+                        <i>who</i> is going to have what roles and we will also 
+                        <br>discuss 
                      <em>design ideas</em> for our project. </p>
                 
                 <h4><span>Miscellaneous</span></h4>
-                     <p>Lisa said that she will not attend next meeting due to class conflicts.
+                     <p>Lisa said that she will not attend next meeting due
+                        <br> to class conflicts.
                          <br>
-                        Bob suggested that we make a calendar to plan future meetings
+                        Bob suggested that we make a calendar to plan
+                        <br> future meetings
                         <br>
-                        Lola suggested to provide link to UCSD resources for students in the app.
+                        Lola suggested to provide link to UCSD resources for 
+                        <br>students in the app.
                         <br>
-                        Example Link: <a href="https://caps.ucsd.edu">CAPS Resource</a>
+                        Example Link: <a href="https://caps.ucsd.edu" target="_caps">CAPS Resource</a>
                      </p>
             </div>
 
             <br>
             <section id="media">
+                <h3>Media</h3>
                 <h4>Picture of Design Idea</h4>
                     <img src="lab2-image.png" alt="Image of possible home screen design"
                     width="320" height="240">
@@ -95,19 +123,12 @@
                     </audio>
             </section>
 
-                <br>
 
-                <details>
-                    <summary><strong>Summary</strong></summary>
-                    <p>We discussed a project idea, decided on roles, and started designing
-                        the home screen for our app.
-                    </p>
-                </details>
                 <br>
                   
                   <form>
-                      <fieldset>
-                    <h4>Form</h4>
+
+                    <h3>New Member Sign-Up Form</h3>
                       
                       <p>Name:</p>
                       <input type="text" name="Name">
@@ -160,8 +181,17 @@
                       <textarea></textarea>
                       <br>
                       <button type="button">Submit!</button>
-                  </fieldset>
+
                   </form>
+                </div>
+                <br>
+
+                <details>
+                    <summary><strong>Summary</strong></summary>
+                    <p>We discussed a project idea, decided on roles, and started designing
+                        the home screen for our app.
+                    </p>
+                </details>
             </main>
         
         

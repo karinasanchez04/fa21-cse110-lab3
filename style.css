@@ -1,75 +1,147 @@
+/* make the background color all one color  */
 html{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(49, 58, 47);
 }
+
+/* used universal selector to apply font  */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* used element selector to apply style to header  */
 header {
     background-color: #acd1af;
     color:#2b4f1c;
     text-align: center;
-    border: 2px solid green;
+
+    /* applying border to the header */
+    border-width: 2px;
+    border-color: green;
+    border-style: solid;
     border-radius: 10px;
+
     padding-top: 1pc;
     padding-bottom: 1pc;
     margin:auto;
+    position: relative;
     
 }
 
-h4 {
+
+/* using descendant combinator */
+section h4 {
+    /* styling my text for all h4 headers that are in sections*/
     color:green;
     text-decoration: underline;
     text-align: left;
     
 }
 
-section{
-    padding-left: 2pc;
-    padding-bottom: 1pc;
-    border: groove green;
-    border-width: 2px;
-    background-color: hsla(102, 48%, 82%, 1);
-    border-radius: 10px;
-    margin-top: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
+
+/* using child combinator */
+div > h4{
+    color:green;
+    text-decoration: underline;
+    text-align: left;
 }
 
-#attendance{
-    top: 231px;
+/* using adjacent combinator */
+h4 + p {
+    font-size: 11pt;
+    color: navy;
+}
+
+/* using general combinator */
+h4 ~ ol{
+    color: sienna;
+}
+
+div.business{
     display: inline-block;
-    width: 400px;
-}
-
-#agenda{
-    display: inline-block;
-    width: 400px;
-    height: 220px;
-    position: absolute;
-    top: 231px; 
-    left: 500px;
-}
-
-details{
-    
-    padding-left: 2pc;
-    padding-bottom: 1pc;
-    padding-top: 5px;
-    border: groove green;
-    border-width: 2px;
-    background-color: hsla(102, 48%, 82%, 1);
-    border-radius: 10px;
-    margin-top: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
-}
-
-div{
-    padding: 0pc 0pc 1pc 2pc;
+    padding: 10px 20px 10px 20px;
     border: 2px groove green;
     background-color: hsla(102, 48%, 82%, 1);
     border-radius: 10px;
     margin: 1px 10px 0px 10px;
+    width: 400px;
 }
+
+
+section{
+    
+
+    border: groove green;
+    border-width: 2px;
+    background-color: hsla(102, 48%, 82%, 1);
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+
+/* used id selector to apply style to the attendance id */
+#attendance{
+
+
+    display: inline-block;
+    width: 400px;
+    margin: 1px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+    grid-column: 2;
+    
+}
+
+/* used id selector to apply style to the agenda id */
+#agenda{
+    display: inline-block;
+    width: 400px;
+    grid-row: 1;
+    grid-column: 3;
+    margin: 1px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+#logistics{
+    display: inline-block;
+    width: 400px;
+    grid-row: 1;
+    grid-column: 1;
+    margin: 1px 10px 0px 10px;
+    padding: 10px 20px 10px 20px;
+}
+/* used id selector to apply style to the container id */
+#container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#container div{
+    align-items: center;
+}
+/* used id selector to apply style to the media id */
+#media{
+    display: inline-block;
+    height: 797px;
+    width: 400px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
 
 form{
 
@@ -80,13 +152,95 @@ form{
     margin-top: 1px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 0px 20px 0px 20px;
     display: inline-block;
     width: 400px;
 
+
+
 }
 
-strong {
-    color: rgb(19, 87, 40);
+
+
+@media screen and (max-width: 600px) {
+    #wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+    }
+    #logistics, .business{
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+     #attendance, #media{
+        grid-row: 2;
+        grid-column: 1;
+ 
+    }
+    #agenda, form{
+        grid-row: 3;
+        grid-column: 1;
+
+    }
+
+  }
+
+
+
+
+details{
+    
+    padding-left: 2pc;
+    padding-bottom: 1pc;
+    padding-top: 5px;
+    border: groove green;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: hsla(102, 48%, 82%, 1);
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: static;
+    /* use of block display */
+    display: block;
+}
+
+footer{
+    display: block;
+    height: 80px;
+    width: 350px;
+    min-width: 200px;
+    padding-left: 10px;
+}
+
+button:hover{
+    color: red;
+}
+
+
+a:active {
+    color: pink;
+}
+
+details:active{
+    color: plum;
+}
+
+a[target=_caps] {
+    background-color: yellow;
+}
+
+
+strong,b,i,em {
+    color: rgba(187, 6, 6, 0.959);
 }
 
 
