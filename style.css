@@ -145,8 +145,6 @@ ul{
 /* used id selector to apply style to the media id */
 #media{
     display: inline-block;
-    height: 797px;
-    width: 400px;
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
